@@ -218,20 +218,12 @@ div.ac-wrap {
 
 // graceful ish style
 @mixin box-shadow($value: 0px) {
-  box-shadow: 0 24px 40px rgba(0, 0, 0, 0.07),
-    0 10.8529px 24.1177px rgba(0, 0, 0, 0.0456112),
-    0 4.50776px 10.0172px rgba(0, 0, 0, 0.035),
-    0 1.63037px 3.62304px rgba(0, 0, 0, 0.0243888);
+  box-shadow: 0 24px 40px rgb(0 0 0 / 0%);
 }
 
 html {
   body {
-    background: linear-gradient(
-        0deg,
-        rgba(var(--primary-rgb), 0.075) 0%,
-        rgba(var(--primary-rgb), 0.075) 100%
-      ),
-      linear-gradient(0deg, var(--secondary) 100%, var(--secondary) 100%);
+    -webkit-font-smoothing: antialiased;
   }
   .background-container {
     position: fixed;
@@ -246,7 +238,7 @@ html {
 html body #main-outlet {
   margin-top: 30px;
   margin-bottom: 50px;
-  background: var(--secondary);
+  background: white;
   border-radius: 1em;
   padding: 3em 3em 5%;
   max-width: 1150px;
